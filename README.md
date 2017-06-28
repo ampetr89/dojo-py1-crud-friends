@@ -1,6 +1,6 @@
 # CRUD Friends
 
-A simple app to add names of people and their emails to a MySQL database. All CRUD operations (Create, update, delete) are possible. This application is built using Flask.
+A simple app to add names of people and their emails to a MySQL database. All CRUD operations (Create, read, update, delete) are possible. This application is built using Flask.
 
 
 ## Screenshots
