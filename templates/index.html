@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friends</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+<header></header>
+
+<section>
+
+<table>
+	<thead>
+		<tr>
+		<th>First Name</th><th>Last Name</th><th>Email</th><th></th><th></th>
+		</tr>
+	</thead>
+	<tbody>
+
+	{% if friends %}
+	
+		{% for id, first_name, last_name, email in friends: %}
+			<tr>
+				<td class='data'>{{first_name}}</td>
+				<td class='data'>{{last_name}}</td>
+				<td class='data'>{{email}}</td>
+				<td class='button'>
+				 <form action='/edit/{{id}}' method="POST"><input type="Submit" value="Edit"></form>
+				</td>
+				<td class='button'>
+				<form action='/delete/{{id}}' method="POST"><input type="Submit" value="Delete">
+				</form>
+				</td>
+			</tr>
+		{% endfor %}
+
+	{% endif %}
+	<tr>
+		<form action='/add' method="POST">
+		<td class='data new'><input type="text" name="first_name" placeholder="First Name"></td>
+		<td class='data new'><input type="text" name="last_name" placeholder="Last Name"></td>
+		<td class='data new'><input type="text" name="email" placeholder="Email"></td>
+		<td class='button'>
+		<input type="Submit" value="Add"></form>
+		</td>
+		<td class='button'></td>
+		</form>
+	</tr>
+
+	</tbody>
+	</table>
+
+</section>
+</body>
+</html>

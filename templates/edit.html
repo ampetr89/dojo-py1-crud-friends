@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit User</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+
+<header>
+</header>
+
+<section class='edit'>
+
+	<form  action='/update' method='POST'>
+	 <table class = 'edit'>
+	  <tr>
+		<td>First name: </td>
+		<td><input type="text" name="first_name" value="{{first_name}}"></td>
+	  </tr>
+	  <tr>
+		<td>Last name:</td>
+		<td><input type="text" name="last_name" value="{{last_name}}"></td>
+	  </tr>
+	  <tr>
+		<td>Email:</td>
+		<td><input type="text" name="email" value="{{email}}"></td>
+	  </tr>
+	  <tr>
+		<td><input type="submit" value="Submit"></td>
+		<td><a href="/">Cancel</a></td>
+	   </tr>
+	 </table>
+	 <input type="hidden" name="id" value={{id}}>
+	</form>
+</section>
+</body>
+</html>

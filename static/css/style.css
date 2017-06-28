@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	overflow: hidden;
+}
+body{
+	font-family: arial, sans-serif;
+	text-align: center;
+	/*background-color: #b3ccff;*/
+}
+
+header{
+	height: 10vh;
+}
+
+
+section{
+	text-align: center;
+	overflow-y: scroll;
+	height: 80vh;
+	width: 80vw;
+	outline: #b3ccff 2px solid;
+	padding: 1em ;
+	margin: 0 auto;
+}
+table{
+	/*width: 60%;*/
+	border-collapse: collapse;
+	margin: 0 auto;
+	/*border-spacing: 1em .5em;*/
+}
+th{
+	font-size: 1.5em;
+}
+td, input[type="text"], input[type="text"]::placeholder{
+	text-align: center;
+	font-size: 20px;
+}
+.edit td{
+	text-align: left;
+}
+.edit input[type="text"]{
+	color: blue; /*#47476b;*/
+}
+table.edit{
+	
+
+}
+section.edit {
+	height: auto;
+	width: 40vw;
+	outline: none;
+	overflow: hidden;
+	outline:black 1px solid;
+}
+thead{
+	font-weight: bold;
+}
+
+td input[type="submit"]{
+	padding: .1em .25em;
+}
+
+.new input[type="text"]{
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+td{
+	height: 1.2em;
+}
+.data{
+	width: 200px;
+	padding: .5em .3em;
+	outline: 1px solid silver;
+}
+.new{
+	background-color: rgba(102, 255, 153, .5)
+}
+.button{
+	/*margin: .5em .3em;*/
+	padding: .1em .25em;
+	width: 50px;
+	text-align: center;
+}
